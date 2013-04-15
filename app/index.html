@@ -13,8 +13,9 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
       	<!-- build:css styles/main.css -->
 	    <link rel="stylesheet" href="styles/main.css"><!-- our sass/compass generated file -->
-		<link rel="stylesheet" href="components/sass-bootstrap/bootstrap-2.3.1.css">
-        <link rel="stylesheet" href="components/sass-bootstrap/bootstrap-responsive-2.3.1.css">
+ 
+		
+		
         <!-- endbuild -->
         
 		<!-- build:js scripts/header.js -->
@@ -23,32 +24,84 @@
 		
     </head>
     <body>
-        <div class="container">
-            <div class="hero-unit">
-                <p>You now have:</p>
-                <ul>
-					<li>A Yeoman example project</li>
-					<li>Concatenated resources</li>
-					<li>Linted code</li>
-					<li>Sprited images</li>
-					<li>Compressed PNGs and JPEGs</li>
-					<li>Optimized HTML</li>
-					<li>A new development experience</li>
-                </ul>
-                <h3>Enjoy coding!</h3>
-				
-				<div class="sprite-glyphicons_002_dog">&nbsp;</div>
-            </div>
-        </div>
+		<header>
+		      <div class="container clearfix">
+		    <div class="row">
+		          <div class="span12">
+		        <div class="navbar navbar_">
+		              <div class="container">
+		            <h1 class="brand brand_"><a href="index.html"><img src="components/codester/img/logo.png" width="322" height="65" alt="Logo">"> </a></h1>
+		            <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+		            <div class="nav-collapse nav-collapse_  collapse">
+		                  <ul class="nav sf-menu">
+		                <li class="active"><a href="#">Build</a></li>
+		                <li><a href="#">Concat</a></li>
+		                <li><a href="#">Lint</a></li>
+		                <li ><a href="#">Sprite</a></li>
+		                <li><a href="#">Compress</a></li>
+		                <li><a href="#">Optimize</a></li>
+		              </ul>
+		                </div>
+		          </div>
+		            </div>
+		      </div>
+		        </div>
+		  </div>
+		</header>
+		<div class="bg-content">
+		      <div class="container">
+		    <div class="row">
+		          <div class="span12"> 
+		        <!-- slider -->
+		        <div class="flexslider">
+		              <ul class="slides">
+		            <li> <img src="components/codester/img/slide-1.jpg" alt="" > </li>
+		            <li> <img src="components/codester/img/slide-2.jpg" alt="" > </li>
+		            <li> <img src="components/codester/img/slide-3.jpg" alt="" > </li>
+		            <li> <img src="components/codester/img/slide-4.jpg" alt="" > </li>
+		            <li> <img src="components/codester/img/slide-5.jpg" alt="" > </li>
+		          </ul>
+		            </div>
+		        <span id="responsiveFlag"></span>
+		        <div class="block-slogan">
+		              <h2>Alo, Alo!</h2>
+	                  <p>You now have a Yeoman example project, concatenated resources, linted code, sprited images, compressed PNGs and JPEGs, optimized HTML and a new development experience! <b>Enjoy coding!</b></p>
+		            </div>
+		      </div>
+		        </div>
+		  </div>
+	  </div>
+	  
+	  
 
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
+			<footer>
+			      <div class="container clearfix">
+			    <ul class="list-social pull-right">
+			          <li><a class="icon-1" href="#"></a></li>
+			          <li><a class="icon-2" href="#"></a></li>
+			          <li><a class="icon-3" href="#"></a></li>
+			          <li><a class="icon-4" href="#"></a></li>
+			        </ul>
+					
+			    <div class="privacy pull-left">
+					<div class="sprite-glyphicons_002_dog">&nbsp;</div>
+					
+					Based on free <a href="http://dzyngiri.com/demo/codester/">Codester-Template</a> | &copy; 2013 | <a href="http://www.dzyngiri.com">Dzyngiri : Online Design Magazine</a> | <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a> | Demo Illustrations by <a href="http://justinmezzell.com" target="_blank">Justin Mezzell</a></div>
+			  </div>
+			    </footer>
 
         <!-- build:js scripts/footer.js -->
         <script src="components/jquery/jquery.js"></script>
         <script src="scripts/main.js"></script>
+		<script src="components/codester/js/superfish.js" type="text/javascript" charset="utf-8"></script>
+		<script src="components/codester/js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="components/codester/js/jquery.kwicks-1.5.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="components/codester/js/touchTouch.jquery.js" type="text/javascript" charset="utf-8"></script>
+		
         <script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-alert.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
@@ -63,6 +116,13 @@
         <script src="components/sass-bootstrap/js/bootstrap-collapse.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
         <!-- endbuild -->
+		<script>		
+			 jQuery(window).load(function() {	
+	     jQuery('.magnifier').touchTouch();			
+	    jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
+	  		  }); 
+				
+		</script>
 	
 </body>
 </html>

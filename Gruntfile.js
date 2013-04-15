@@ -229,7 +229,8 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,txt}',
                         '.htaccess',
-						'images/*.png'
+						'images/*.png',
+						'components/codester/{,*/}*'
                     ]
                 }]
             }

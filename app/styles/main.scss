@@ -3,6 +3,11 @@
 
 
 @import 'sass-bootstrap/lib/bootstrap';
+
+@import 'codester/styles/touchTouch';
+@import 'codester/styles/kwicks-slider';
+@import 'codester/styles/style';
+
 .hero-unit {
     margin: 50px auto 0 auto;
     width: 300px;
